@@ -1,14 +1,14 @@
 package Years;
 
 public class Years {
-	 public Year first, end;
+	 public Year first;
 	 
-	 public Years(){
-		 this.first = new Year(1); 
+	 public Years(int year){
+		 this.first = new Year(1);
 	 }
 	 
 	 public void newYear(int year) {
-		 Year curr = null;
+		 Year curr = first;
 		 for(Year years = this.first; years.nextYear != null; years = years.nextYear )
 			 curr = years;
 		 
